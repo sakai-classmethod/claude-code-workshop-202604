@@ -1,6 +1,6 @@
 # claude-code-workshop-202604
 
-Claude Code Workshop Section 02 のハンズオン用サンプルハーネス。Claude Code の主要 7 要素（settings / statusLine / CLAUDE.md / Rules / Hooks / Subagents / Skills / MCP）を 1 つのリポジトリで体験できる構成になっている。
+Claude Code Workshop のサンプルハーネス。Claude Code の主要 7 要素（settings / statusLine / CLAUDE.md / Rules / Hooks / Subagents / Skills / MCP）を 1 つのリポジトリで体験できる構成になっている。
 
 ## 目次
 
