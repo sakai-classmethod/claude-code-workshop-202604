@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## このリポジトリの位置づけ
 
-Claude Code Workshop Section 02 のハンズオン用サンプルハーネス。アプリケーションコード（`package.json` / `src/` 等）は意図的に置いていない。`.claude/` 配下の設定ファイルそのものが学習対象であり、Claude Code の 7 要素（settings / statusLine / CLAUDE.md / Rules / Hooks / Subagents / Skills / MCP）に触れる構成になっている。
-
-ハンズオン参加者がワークショップ中に `src/sample.ts` などを TDD で新規作成することを想定している。既存ファイルを「アプリ実装」として読まないこと。
+Claude Code Workshop のサンプルハーネス。
+アプリケーションコード（`package.json` / `src/` 等）は意図的に置いていない。
+`.claude/` 配下の設定ファイルそのものが学習対象であり、Claude Code の 7 要素（settings / statusLine / CLAUDE.md / Rules / Hooks / Subagents / Skills / MCP）に触れる構成になっている。
 
 ## ハーネスのアーキテクチャ
 
@@ -32,7 +32,7 @@ Claude Code Workshop Section 02 のハンズオン用サンプルハーネス。
 
 - `agents/` — Subagent 定義。frontmatter の `tools` で権限を絞っている。`researcher` は Read/Glob/Grep のみ（読み取り専用調査）、`code-reviewer` は + Bash で diff を読むがファイル編集はしない
 - `rules/` — frontmatter の `paths` glob にマッチするファイルを編集するときに自動でロードされる。`typescript.md` (TS/TSX) と `testing.md` (`*.test.*` / `__tests__/`) の 2 本
-- `skills/tdd/` — `/tdd` で起動する TDD 強制スキル。`SKILL.md` 本体に加え、モック関連で `testing-anti-patterns.md` を参照させる構造
+- `skills/practicing-tdd/` — `/tdd` で起動する TDD 強制スキル。`SKILL.md` 本体に加え、モック関連で `testing-anti-patterns.md` を参照させる構造
 
 ## このリポジトリで作業するときのルール
 
